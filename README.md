@@ -1,6 +1,6 @@
 # ActionMailer::InStyle
 
-[![TestPilot Build Status](http://testpilot.me/testpilot/actionmailer-instyle.png)](http://testpilot.me/testpilot/actionmailer-instyle)
+Forked From [testpilot/actionmailer-instyle](https://github.com/testpilot/actionmailer-instyle). He did most of the hard work.
 
 HTML Emails can be a PITN, especially when you want maximum email client compatibility, of which the best way to achieve this is inline CSS. Unfortunately nobody actually wants to be forced into writing crap like that so we've created **InStyle**, it will automatically intercept your emails and look for a `stylesheet` linking to something inside your assets folder, extract all the styles, and convert them to inline styles on the fly.
 
@@ -8,14 +8,14 @@ _There are a couple of other projects which do this, some have not been updated 
 
 ## Requirements
 
-This gem is built specifically to take advantage of the Rails 3.1 Asset Pipeline, as such you must be using Rails ~>3.1 and have the Asset Pipeline enabled (default)
+This gem is built to take advantage of the Rails 3.1 *(and above)* Asset Pipeline, as such you must be using Rails ~>3.1 and have the Asset Pipeline enabled (default)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'actionmailer-instyle4', github: 'robinjoseph08/actionmailer-instyle4', :require => 'action_mailer/in_style'
+gem 'actionmailer-instyle4', :require => 'action_mailer/in_style'
 ```
 
 And then execute:
@@ -144,4 +144,4 @@ As above.
 
 | Author | Twitter |
 |------:|:------------|
-| Ivan Vanderbyl | [@IvanVanderbyl](http://twitter.com/ivanvanderbyl) |
+| Robin Joseph | [@robinjoseph08](http://twitter.com/robinjoseph08) |
