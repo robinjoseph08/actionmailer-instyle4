@@ -15,13 +15,13 @@ This gem is built specifically to take advantage of the Rails 3.1 Asset Pipeline
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'actionmailer-instyle', :require => 'action_mailer/in_style'
+gem 'actionmailer-instyle4', github: 'robinjoseph08/actionmailer-instyle4', :require => 'action_mailer/in_style'
 ```
 
 And then execute:
 
 ```bash
-$ bundle
+$ bundle install
 ```
 
 ## Usage

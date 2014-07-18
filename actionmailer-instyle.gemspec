@@ -2,10 +2,10 @@
 require File.expand_path('../lib/action_mailer/in_style/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Ivan Vanderbyl"]
-  gem.email         = ["ivanvanderbyl@me.com"]
+  gem.authors       = ["Robin Joseph", "Ivan Vanderbyl"]
+  gem.email         = ["robin.joseph@me.com"]
   gem.description   = %q{Easily create HTML emails in Rails ~>3.1}
-  gem.summary       = %q{This gem brings you the power of the premailer gem to Rails 3
+  gem.summary       = %q{This gem brings you the power of the premailer gem to Rails 4
                          without any configuration needs. Create HTML emails, include a
                          CSS file as you do in a normal HTML document and premailer will
                          inline the included CSS.}
@@ -14,14 +14,14 @@ Gem::Specification.new do |gem|
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  gem.name          = "actionmailer-instyle"
+  gem.name          = "actionmailer-instyle4"
   gem.require_paths = ["lib"]
   gem.version       = ActionMailer::InStyle::VERSION
 
-  gem.add_dependency("premailer", "~> 1.7")
-  gem.add_dependency("actionmailer",  "~> 3.1")
-  gem.add_dependency("activesupport", "~> 3.1")
-  gem.add_dependency("sprockets", "~> 2.0")
+  gem.add_dependency("premailer", ">= 1.7")
+  gem.add_dependency("actionmailer",  ">= 3.1")
+  gem.add_dependency("activesupport", ">= 3.1")
+  gem.add_dependency("sprockets", ">= 2.0")
 
   gem.add_development_dependency 'rspec-rails', '~> 2.8.0'
   gem.add_development_dependency 'guard-rspec'
