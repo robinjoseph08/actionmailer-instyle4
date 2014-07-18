@@ -47,7 +47,6 @@ module ActionMailer
         part = Mail::Part.new
         part.body = premailer.to_inline_css
         part.content_type = "text/html; charset=#{@msg_charset}"
-        puts part
         message.html_part = part
       end
 

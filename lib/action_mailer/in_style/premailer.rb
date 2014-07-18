@@ -10,7 +10,7 @@ module ActionMailer
 
       # Uses sprockets and the Rails ~>3.1 asset pipeline
       # to load the compiled CSS from stylesheet links within the header of the
-      # email temoplate.
+      # email template.
       def load_css_from_asset_pipeline!
         if tags = @doc.search("link[@rel='stylesheet'], style")
           tags.each do |tag|
