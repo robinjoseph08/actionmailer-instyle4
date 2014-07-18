@@ -18,6 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = ActionMailer::InStyle::VERSION
 
+  gem.add_dependency("nokogiri",  ">= 1.6")
   gem.add_dependency("premailer", ">= 1.7")
   gem.add_dependency("actionmailer",  ">= 3.1")
   gem.add_dependency("activesupport", ">= 3.1")
@@ -28,7 +29,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'sass', '~> 3.1'
   gem.add_development_dependency 'sqlite3', '1.3.5'
   gem.add_development_dependency 'mail'
-  gem.add_development_dependency 'nokogiri'
   gem.add_development_dependency 'combustion', '~> 0.3.1'
 
 end
